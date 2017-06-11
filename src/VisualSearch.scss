@@ -1,0 +1,212 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.tokenDisplayUnit {
+  display      : block;
+  float        : left;
+  position     : relative;
+  width        : auto;
+  height       : 30px;
+  border-radius: 15px;
+  padding      : 1.5px 12.5px;
+  background   : white;
+  border       : 1px solid rgba(0,0,0,0.2);
+  color        : rgba(0,0,0,0.2);
+  margin-left  : 5px;
+  line-height  : 21px;
+  box-sizing: border-box;
+  .autoCompleteList {
+    top: 22.5px;
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+    li {
+      border-color: rgba(0,0,0,0.2);
+    }
+  }
+  .closeIcon {
+    min-width     : auto;
+    padding-left  : 0px;
+    padding-right : 3px;
+    left          : -5px;
+    font-size     : 12px;
+    float         : left; 
+    top           : 6px;
+    position      : relative;
+  }
+  label {
+    width       : auto;
+    height      : 25px;
+    display     : block;
+    position    : relative;
+    float       : left;
+    font-size   : 12px;
+    font-weight : bold;
+    line-height : 21px;
+    color       : rgba(0,0,0,0.2);
+  }
+
+  input {
+    width       : auto;
+    height      : 25px; 
+    display     : inline-block;
+    position    : relative;
+    float       : left;
+    font-size   : 12px;
+    font-weight : normal;
+    background  : transparent;
+    line-height : 26px;
+    padding     : 0px 0px 0px 5px;
+    color       : rgba(0,0,0,0.2);
+    border      : none;
+    box-shadow: none !important;
+    &:focus {
+      outline   : none !important;
+    }
+  }
+}
+.tokenList {
+  display   : block;
+  float     : left;
+  width     : auto;
+  height    : auto;
+  position  : relative;
+}
+.searchAndSortContainer {
+  width        : 100%;
+  height       : auto;
+  height       : 36px;
+  display      : block;
+  position     : relative;
+  float        : left;
+  padding      : 0px 0px;
+  margin       : 0px 0px 25px 0px;
+  background   : transparent;
+  border       : rgba(0,0,0,0.2) 0.5px solid;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.selectedFilterContainer {
+  position     : relative;
+  float        : left;
+  display      : block;
+  height       : 34px;
+  padding      : 2px 0px;
+  width        : auto;    
+  box-sizing: border-box;
+}
+.activeFilterContainer {
+  position   : relative;
+  float: left;
+  display: block;
+  height: 30px;
+  padding: 3px 0px;
+  min-width: 200px;    
+  .activeInput {
+    width      : auto;
+    float      : left;
+    height     : 26px;
+    padding    : 0px 5px;
+    font-size  : 12px;
+    font-weight: bold;
+    line-height: 26px;
+    position   : relative;
+    background : transparent !important;
+    border     : none !important;
+    &:focus{
+      outline: none;
+      background: transparent !important;
+    }
+    &::-webkit-input-placeholder {
+      font-weight: 400;
+    }
+  }
+}
+.searchIcon {
+  font-size   : 12px;
+  position    : relative;
+  display     : block;
+  width       : 20px;
+  height      : 20px;
+  padding     : 4px 4px;
+  float       : left;
+  margin      : 3px 3px 3px 4px;
+  box-sizing  : border-box;
+  color       : rgba(0,0,0,0.3);
+}
+.searchKey {
+  position       : relative;
+  font-size      : 12px;
+  display        : block;
+  width          : auto;
+  height         : 26px;
+  float          : left;
+  line-height    : 26px;
+  text-transform : uppercase;
+  padding        : 0px 10px;
+  margin         : 2px 0px;
+}
+.inputLabelHolder {
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  min-width: 30px;
+  left: 0px;
+  top: 0px;
+  background: transparent;
+}
+.inputLabelHolderHot {
+  background: #0096ff;
+  color: white !important;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;   
+}
+.tableSearchInput {
+  border: 1px solid rgba(0,0,0,0.4);
+  width: 100%;
+  display: block;
+  float: left;
+  position: relative;
+  padding: 5px 15px 5px 30px;
+  background: transparent;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  &:focus {
+    outline: none !important;
+  }
+}
+.autoCompleteList {
+  position: absolute;
+  top: 32px; 
+  left: 0px;
+  width: auto;
+  display: block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px;
+  z-index: 10;
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+  .autoCompleteListItem {
+    list-style-type: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+    border:1px solid rgba(0,0,0,0.1);
+    border-top: none !important;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 100%;
+    a {
+      position        : relative;
+      float           : left;
+      text-decoration : none;
+      color           : inherit;
+      padding         : 7px 7px;
+      width           : 100%;
+      height          : inherit;
+    }
+  }  
+} 
